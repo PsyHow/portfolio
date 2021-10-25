@@ -1,0 +1,27 @@
+.contactBlock {
+    background-color: #e9ff72;
+    height: 100vh;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.form {
+    border: 1px solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #b6fff3;
+}
+
+.link {
+    background-color: aqua;
+    text-decoration: none;
+}
