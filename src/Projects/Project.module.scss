@@ -1,5 +1,8 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
 .project {
-  background-color: #181715;
+  background-color: $bgSecondColor;
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -29,9 +32,9 @@
 
     .btnView {
       padding: 10px 20px;
-      background-color: #181715;
+      background-color: $bgSecondColor;
       text-decoration: none;
-      color: #888;
+      color: $descriptionColor;
       font-family: Jost, Arial, Helvetica, sans-serif;
       font-size: 15px;
       position: relative;
@@ -43,21 +46,15 @@
     padding: 10px 5px;
 
     .projectTitle {
-      font-family: 'Jost', sans-serif;
-      font-size: 30px;
-      font-weight: 400;
+      color: $primaryColor;
+      @include text($fontPrimary, 30px, 1.2, 400);
       margin: 0 0 18px;
-      color: #987750;
-      line-height: 1.2;
     }
 
     .projectDescription {
-      font-family: Jost, Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      line-height: 1.44;
+      @include text($fontDescription, 15px, 1.44, 400);
+      color: $descriptionColor;
       letter-spacing: 0;
-      font-weight: 400;
-      color: #888;
       word-break: break-word;
     }
   }
