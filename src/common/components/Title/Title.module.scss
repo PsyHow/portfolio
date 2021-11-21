@@ -1,0 +1,31 @@
+.title {
+  margin: 0 0 34px;
+  padding-bottom: 30px;
+  position: relative;
+
+  & h2 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    position: relative;
+    line-height: 1.2;
+    font-family: 'Jost', sans-serif;
+    color: #987750;
+    font-weight: 400;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .2);
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+
+

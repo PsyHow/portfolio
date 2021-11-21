@@ -1,27 +1,31 @@
 .contactBlock {
     background-color: #e9ff72;
     height: 100vh;
+    padding: 50px 0;
 }
 
 .container {
     flex-direction: column;
     justify-content: flex-start;
-    text-align: center;
 }
 
 .form {
     border: 1px solid;
-    width: 250px;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form input, .form textarea {
+    width: 100%;
 }
 
 .title {
     background-color: #b6fff3;
 }
 
-.link {
+.button {
+    padding: 10px 20px;
     background-color: aqua;
-    text-decoration: none;
 }

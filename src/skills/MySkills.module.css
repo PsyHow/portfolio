@@ -18,6 +18,12 @@
     border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 624px){
+    .skills {
+        justify-content: space-between;
+    }
 }

@@ -1,12 +1,10 @@
 .footerBlock {
     background-color: #0ea0ac;
-    height: 300px;
 }
 
 .container {
     flex-direction: column;
     justify-content: flex-start;
-    text-align: center;
 }
 
 .title {
@@ -15,10 +13,12 @@
 
 .socialContainer {
     border: 1px solid;
+    background-color: #7f88ff;
     width: 250px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .social {
