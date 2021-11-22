@@ -1,0 +1,22 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.remoteWork {
+  background-color: $bgColor;
+  min-height: 50vh;
+
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    .link {
+      @include buttonLink(10px 20px, $bgSecondColor, none, $descriptionColor, $fontDescription, 15px);
+    }
+  }
+}
+
+
+
+
+

@@ -20,7 +20,7 @@ export const MyProjects = () => {
     }
 
     return (
-        <div className={ style.myProjects }>
+        <div id={'projects'} className={ style.myProjects }>
             <div className={ `${ containerStyle.container } ${ style.container }` }>
                 <Title text={ 'My Project' }/>
                 <div className={ style.project }>

@@ -18,3 +18,12 @@
   right: $right;
   opacity: $opacity;
 }
+
+@mixin buttonLink($padding, $backgroundColor, $textDecoration, $color, $fontFamily, $fontSize) {
+  padding: $padding;
+  background-color: $backgroundColor;
+  text-decoration: $textDecoration;
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}

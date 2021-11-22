@@ -9,8 +9,8 @@ export const Main = () => {
         backgroundImage: `url(${mainPhoto})`
     }
     return (
-        <div className={style.mainBlock}>
-            <div className={containerStyle.container}>
+        <div id={'home'} className={style.mainBlock}>
+            <div className={`${containerStyle.container} ${style.container}`}>
                 <div className={style.greetingText}>
                     <span>Hi there!</span>
                     <h1 className={style.myName}>I am Burnishev Viktor</h1>
