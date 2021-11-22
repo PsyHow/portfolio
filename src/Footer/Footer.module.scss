@@ -9,6 +9,15 @@
     flex-direction: column;
     justify-content: flex-start;
 
+    .title {
+      font-size: 20px;
+      line-height: 1.2;
+      font-family: 'Jost', sans-serif;
+      color: $primaryColor;
+      font-weight: 400;
+      padding-bottom: 20px;
+    }
+
     .socialContainer {
       border: 1px solid;
       background-color: #7f88ff;
