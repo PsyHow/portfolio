@@ -1,5 +1,5 @@
-@import "../common/styles/sass/variables";
-@import "../common/styles/sass/mixins";
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .project {
   background-color: $bgSecondColor;
@@ -20,14 +20,7 @@
     position: relative;
 
     &::before {
-      position: absolute;
-      content: '';
-      background-color: black;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.3;
+      @include blackHover(absolute, '', black, 0, 0, 0, 0, 0.4);
     }
 
     .btnView {

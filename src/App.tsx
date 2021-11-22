@@ -1,12 +1,12 @@
 import React          from 'react';
 import './App.css';
-import { Header }     from "./header/Header";
-import { Main }       from "./main/Main";
+import { Header }     from "./Header/Header";
+import { Main }       from "./Main/Main";
 import { MySkills }   from "./skills/MySkills";
 import { MyProjects } from "./MyProjects/MyProjects";
-import { RemoteWork } from "./remoteWork/RemoteWork";
-import { Footer }     from "./footer/Footer";
-import { Contacts }   from "./contacts/Contacts";
+import { RemoteWork } from "./RemoteWork/RemoteWork";
+import { Footer }     from "./Footer/Footer";
+import { Contacts }   from "./Contacts/Contacts";
 
 function App() {
     return (

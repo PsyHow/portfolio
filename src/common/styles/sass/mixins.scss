@@ -7,3 +7,14 @@
   font-weight: $fontWeight;
   //color: $primaryColor;
 }
+
+@mixin blackHover($position, $content, $backgroundColor, $top, $bottom, $left, $right, $opacity) {
+  position: $position;
+  content: $content;
+  background-color: $backgroundColor;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  opacity: $opacity;
+}
