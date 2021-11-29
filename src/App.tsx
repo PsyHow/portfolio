@@ -7,17 +7,19 @@ import { MyProjects } from "./MyProjects/MyProjects";
 import { RemoteWork } from "./RemoteWork/RemoteWork";
 import { Footer }     from "./Footer/Footer";
 import { Contacts }   from "./Contacts/Contacts";
+import { AboutMe }    from "./AboutMe/AboutMe";
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <MySkills/>
-            <MyProjects/>
-            <RemoteWork/>
-            <Contacts/>
-            <Footer/>
+                {/*<Header/>*/}
+                <Main/>
+                <AboutMe/>
+                <MySkills/>
+                <MyProjects/>
+                <RemoteWork/>
+                <Contacts/>
+                <Footer/>
         </div>
     );
 }

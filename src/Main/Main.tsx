@@ -11,12 +11,18 @@ export const Main = () => {
     return (
         <div id={'home'} className={style.mainBlock}>
             <div className={`${containerStyle.container} ${style.container}`}>
-                <div className={style.greetingText}>
-                    <span>Hi there!</span>
-                    <h1 className={style.myName}>I am Burnishev Viktor</h1>
-                    <p>A Frontend Developer</p>
+                <div className={style.photoContainer}>
+                    <div className={style.border1}></div>
+                    <div className={style.border2}></div>
+                    <div className={style.mainPhotoBlock}>
+                        <div className={style.photo} style={photo}></div>
+                    </div>
+                    <div className={style.greetingText}>
+                        <span>Hi there! I am</span>
+                        <h1 className={style.myName}>Burnishev Viktor</h1>
+                        <p>A Frontend Developer</p>
+                    </div>
                 </div>
-                <div className={style.photo} style={photo}></div>
             </div>
         </div>
     );

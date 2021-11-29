@@ -4,6 +4,7 @@
   background-color: $bgColor;
   //background-color: $bgSecondColor;
   padding: 100px 0;
+  width: 56%;
 
   .skillsContainer {
     align-items: center;
@@ -16,7 +17,7 @@
       justify-content: center;
       flex-wrap: wrap;
       align-items: flex-start;
-      @media screen and (min-width: 625px) {
+      @media screen and (min-width: 1117px) {
         justify-content: space-between;
       }
     }

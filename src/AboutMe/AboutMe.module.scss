@@ -1,0 +1,38 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.mainBlock {
+  background-color: $bgColor;
+  padding: 100px 0;
+  width: 56%;
+
+  .container {
+
+    .description {
+      padding: 0;
+      @include text($fontDescription, 30px, 44px, 400);
+      color: $descriptionColor;
+      margin-bottom: 74px;
+    }
+  }
+     .table {
+      width: 100%;
+      text-align: left;
+      margin-left: 55px;
+      & tbody {
+        display: table-row-group;
+
+        & th {
+          padding: 18px 10px 9px 0;
+          width: 200px;
+          color: $descriptionColor;
+          @include text($fontDescription, 18px, 0, 500);
+        }
+        .th2 {
+          color: #dddddd;
+          @include text($fontDescription, 18px, 1.2, 400);
+        }
+      }
+    }
+}
+

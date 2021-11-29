@@ -1,20 +1,28 @@
 @import "./../../styles/sass/variables";
+@import "./../../styles/sass/mixins";
 
 .title {
   margin: 0 0 34px;
-  padding-bottom: 30px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   & h2 {
     margin: 0;
-    font-size: 48px;
+    font-size: 18px;
     letter-spacing: 0;
     text-transform: capitalize;
     position: relative;
     line-height: 1.2;
-    font-family: 'Jost', sans-serif;
+    font-family: Jost, sans-serif;
     color: $primaryColor;
     font-weight: 400;
+  }
+
+  & h3 {
+    color: #dddddd;
+    @include text($fontPrimary, 48px, 1.2, 400)
   }
 
   &::before {
@@ -23,9 +31,8 @@
     bottom: 0;
     height: 2px;
     background-color: rgba(255, 255, 255, .2);
-    width: 300px;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    width: 150px;
+    left: 0;
   }
 }
 
