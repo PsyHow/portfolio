@@ -1,0 +1,25 @@
+@import "./src/common/styles/sass/variables";
+
+.appContainer {
+  width: 100%;
+  float: left;
+  clear: both;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: $bgColor;
+    .resumeLeftContent {
+      width: 56%;
+      min-height: 100vh;
+      position: relative;
+      //overflow-x: hidden;
+      float: none;
+      clear: none;
+      .resumePage {
+        width: 100%;
+        float: left;
+        clear: both;
+      }
+    }
+}

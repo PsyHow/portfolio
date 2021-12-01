@@ -1,38 +1,57 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 
-.mainBlock {
-  background-color: $bgColor;
-  padding: 100px 0;
-  width: 56%;
+.about {
+  padding: 100px 0 50px;
 
   .container {
+    padding: 0 12%;
+    margin: 0 auto;
+    width: 100%;
 
-    .description {
-      padding: 0;
-      @include text($fontDescription, 30px, 44px, 400);
-      color: $descriptionColor;
-      margin-bottom: 74px;
-    }
-  }
-     .table {
+    .roww {
       width: 100%;
-      text-align: left;
-      margin-left: 55px;
-      & tbody {
-        display: table-row-group;
+      float: left;
+      clear: both;
 
-        & th {
-          padding: 18px 10px 9px 0;
-          width: 200px;
-          color: $descriptionColor;
-          @include text($fontDescription, 18px, 0, 500);
-        }
-        .th2 {
-          color: #dddddd;
-          @include text($fontDescription, 18px, 1.2, 400);
+      .resumeMainTitle {
+        margin-bottom: 74px;
+
+        .aboutInfo {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 126px;
+
+          .aboutLeft {
+            width: 100%;
+          }
+
+          .aboutRight {
+            .cvDwnld {
+              display: flex;
+              position: relative;
+              margin-left: 70px;
+
+              & a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 100%;
+                width: 340px;
+                height: 220px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #888;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border: 2px solid rgba(255, 255, 255, .2);
+              }
+            }
+          }
         }
       }
     }
+  }
 }
-

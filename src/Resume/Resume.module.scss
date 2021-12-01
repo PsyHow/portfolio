@@ -1,0 +1,138 @@
+@import "./src/common/styles/sass/variables";
+@import "./src/common/styles/sass/mixins";
+
+.mainBox {
+  width: 100%;
+  overflow: hidden;
+
+  .resumeHeader {
+    margin-bottom: 39px;
+    padding: 0 12%;
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style-type: none;
+
+      .active a {
+        color: $primaryColor;
+        border-bottom-color: $primaryColor;
+      }
+
+      & li {
+        margin: 0 0 10px 0;
+        padding: 0;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 40px;
+          height: 2px;
+          background-color: rgba(255, 255, 255, .2);
+          position: relative;
+          float: right;
+          top: 50%;
+          margin: 2px 20px 0 20px;
+        }
+
+        & a {
+          text-decoration: none;
+          display: inline-block;
+          color: $descriptionColor;
+          border-bottom: 1px solid transparent;
+          padding-top: 4px;
+          @include text($fontDescription, 30px, 30px, 400)
+        }
+      }
+    }
+  }
+
+  .tabContent {
+    margin-bottom: 39px;
+    padding: 0 12%;
+
+    .tabActive {
+      display: block;
+      -webkit-animation: tab_animation 1s ease;
+
+      .tabList {
+        & ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
+          & li {
+            margin: 0 0 20px 0;
+            padding: 0;
+            width: 100%;
+            float: left;
+            clear: both;
+
+            .item {
+              width: 100%;
+              float: left;
+              clear: both;
+              background-color: $bgSecondColor;
+              position: relative;
+              padding: 42px 40px 43px;
+              border: 1px solid #151412;
+
+              &::after {
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 50px;
+                left: -1px;
+                top: 50%;
+                margin-top: -25px;
+                background-color: rgba(255, 255, 255, .2);
+                transition: all .5s 1s ease;
+              }
+
+              .topItem {
+                display: flex;
+                margin-bottom: 14px;
+
+                & h5 {
+                  margin: 0;
+                  padding: 0;
+                  font-size: 18px;
+                  text-transform: uppercase;
+                  font-weight: 400;
+                  line-height: 30px;
+                  color: $description2Color;
+                }
+
+                & span {
+                  display: block;
+                  margin: 0 0 0 20px;
+                  padding: 0;
+                  color: $descriptionColor;
+                  @include text($fontDescription, 16px, 30px, 400)
+                }
+              }
+
+              & h3 {
+                margin: 0 0 17px 0;
+                padding: 0;
+                color: $description2Color;
+                @include text($fontPrimary, 30px, 30px, 400);
+              }
+
+              & p {
+                letter-spacing: 0;
+                color: $descriptionColor;
+                @include text($fontDescription, 18px, 1.44, 400);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

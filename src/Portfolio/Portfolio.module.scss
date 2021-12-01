@@ -1,0 +1,67 @@
+@import "../common/styles/sass/variables";
+
+.portfolio {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 150px 0 39px;
+  overflow: hidden;
+  background-color: $bgColor;
+
+  .container {
+    padding: 0 12%;
+    margin: 0 auto;
+    width: 100%;
+
+    .rowww {
+      width: 100%;
+      float: left;
+      clear: both;
+
+      .resumeMainTitle {
+        margin-bottom: 70px;
+        padding-right: 100px;
+        position: relative;
+
+        .myNav {
+          position: absolute;
+          right: 0;
+          display: flex;
+          bottom: 30px;
+          z-index: 5;
+
+          & a {
+            width: 26px;
+            height: 21px;
+            display: block;
+            text-decoration: none;
+            position: relative;
+
+            & span {
+              display: block;
+              background-color: #888;
+              width: 26px;
+              height: 1px;
+              position: absolute;
+              top: 50%;
+              transition: all .3s ease;
+
+              &::before {
+                display: block;
+                background-color: inherit;
+                width: 14px;
+                height: 1px;
+                content: '';
+                position: absolute;
+                left: -1px;
+                transform: rotate(-45deg);
+                bottom: 100%;
+                margin-bottom: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
