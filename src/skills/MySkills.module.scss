@@ -2,9 +2,9 @@
 
 .skillsBlock {
   background-color: $bgColor;
-  //background-color: $bgSecondColor;
   padding: 100px 0;
-  width: 65%;
+  position: relative;
+  z-index: 3;
 
   .skillsContainer {
     align-items: center;
@@ -17,7 +17,7 @@
       justify-content: center;
       flex-wrap: wrap;
       align-items: flex-start;
-      @media screen and (min-width: 1117px) {
+      @media screen and (min-width: 625px) {
         justify-content: space-between;
       }
     }

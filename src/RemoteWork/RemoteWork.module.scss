@@ -4,16 +4,13 @@
 .remoteWork {
   background-color: $bgColor;
   min-height: 50vh;
-  width: 56%;
+  position: relative;
+  z-index: 3;
 
   .container {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-
-    .link {
-      @include buttonLink(10px 20px, $bgSecondColor, none, $descriptionColor, $fontDescription, 15px);
-    }
   }
 }
 
