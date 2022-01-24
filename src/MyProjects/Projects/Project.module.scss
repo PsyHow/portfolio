@@ -22,17 +22,6 @@
     &::before {
       @include blackHover(absolute, '', black, 0, 0, 0, 0, 0.4);
     }
-
-    .btnView {
-      padding: 10px 20px;
-      background-color: $bgSecondColor;
-      text-decoration: none;
-      color: $descriptionColor;
-      font-family: Jost, Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      position: relative;
-      z-index: 1;
-    }
   }
 
   .projectInfo {

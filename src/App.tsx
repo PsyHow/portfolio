@@ -10,7 +10,7 @@ import { Contacts }   from "./Contacts/Contacts";
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Header/>
             <Main/>
             <MySkills/>

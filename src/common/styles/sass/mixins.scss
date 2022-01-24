@@ -19,11 +19,17 @@
   opacity: $opacity;
 }
 
-@mixin buttonLink($padding, $backgroundColor, $textDecoration, $color, $fontFamily, $fontSize) {
+@mixin buttonLink($padding, $backgroundColor,
+$textDecoration, $color, $fontFamily,
+ $fontSize, $position, $index, $width, $textAlign) {
   padding: $padding;
-  background-color: $backgroundColor;
+  background-color: $bgColor;
   text-decoration: $textDecoration;
   color: $color;
   font-family: $fontFamily;
   font-size: $fontSize;
+  position: $position;
+  z-index: $index;
+  width: $width;
+  text-align: $textAlign;
 }

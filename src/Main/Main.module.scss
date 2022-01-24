@@ -4,10 +4,23 @@
 .mainBlock {
   background-color: $bgColor;
   padding: 100px 0;
+  position: relative;
+  z-index: 2;
+
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 
   .container {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 
     @media screen and (min-width: 874px) {
       justify-content: space-between;
@@ -15,7 +28,6 @@
 
     .greetingText {
       width: 350px;
-      background-color: $bgSecondColor;
       color: $descriptionColor;
       @include text($fontDescription, 30px, 1.2, 400);
     }
@@ -25,18 +37,55 @@
       @include text($fontPrimary, 48px, 1.2, 400);
     }
 
-    .photo {
-      width: 350px;
-      height: 400px;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .photoContainer {
       position: relative;
+      z-index: 5;
+      margin-top: 100px;
+      @media screen and (min-width: 873px ) {
+        margin-top: 80px;
+      }
 
-      &::before {
-        @include blackHover(absolute, '', black, 0, 0, 0, 0, 0.4);
+      .border1 {
+        position: absolute;
+        z-index: 1;
+        left: -40px;
+        bottom: -20px;
+        right: -40px;
+        top: -20px;
+        border: 1px solid $primaryColor;
+        border-radius: 2px;
+      }
+
+      .border2 {
+        position: absolute;
+        z-index: 1;
+        left: -20px;
+        bottom: -40px;
+        right: -20px;
+        top: -40px;
+        border: 1px solid $primaryColor;
+        border-radius: 2px;
+      }
+
+      .photo {
+        width: 350px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+        transition: 0.5s;
+
+        &:hover {
+          transform: translate(-20px, -20px);
+        }
+
+        &::before {
+          @include blackHover(absolute, '', black, 0, 0, 0, 0, 0.4);
+        }
       }
     }
   }

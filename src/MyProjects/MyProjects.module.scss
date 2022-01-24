@@ -3,6 +3,8 @@
 .myProjects {
   background-color: $bgColor;
   padding: 100px 0;
+  position: relative;
+  z-index: 3;
 
   .container {
     flex-direction: column;

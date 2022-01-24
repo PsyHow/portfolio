@@ -6,6 +6,7 @@ import { Title }      from "../common/components/Title/Title";
 import socialImage    from "../assets/image/0_zyCI97lw5e_a7-sP.jpg"
 import todoImage      from "../assets/image/istockphoto-863607936-612x612.jpg"
 import counterImage   from "../assets/image/360_F_72928371_WqqMwhEb3XPmeGlqH3ynIaoFss8uyV3K.jpg"
+import Fade from 'react-awesome-reveal';
 
 export const MyProjects = () => {
 
@@ -21,7 +22,9 @@ export const MyProjects = () => {
 
     return (
         <div id={'projects'} className={ style.myProjects }>
+            <Fade>
             <div className={ `${ containerStyle.container } ${ style.container }` }>
+                <Fade>
                 <Title text={ 'My Project' }/>
                 <div className={ style.project }>
                     <Project style={ todolist } title={ 'Todolist' } link={ 'https://github.com/PsyHow/Todolist' }
@@ -36,7 +39,9 @@ export const MyProjects = () => {
                              description={ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,' +
                              ' sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }/>
                 </div>
+                </Fade>
             </div>
+            </Fade>
         </div>
     );
 }

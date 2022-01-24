@@ -2,8 +2,9 @@
 
 .skillsBlock {
   background-color: $bgColor;
-  //background-color: $bgSecondColor;
   padding: 100px 0;
+  position: relative;
+  z-index: 3;
 
   .skillsContainer {
     align-items: center;

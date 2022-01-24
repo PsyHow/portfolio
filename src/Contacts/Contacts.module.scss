@@ -5,6 +5,8 @@
   background-color: $bgColor;
   height: 50vh;
   padding: 100px 0;
+  position: relative;
+  z-index: 3;
 
   .container {
     flex-direction: column;
@@ -15,13 +17,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 30px;
 
       & input, textarea {
         width: 100%;
         background-color: transparent;
         margin-top: 4px;
         border: 1px solid $descriptionColor;
-        color:$descriptionColor;
+        color: $descriptionColor;
         @include text($fontDescription, 15px, 1.44, 400);
 
         &:focus {
@@ -31,11 +34,9 @@
         }
       }
 
-    }
-
-    .button {
-      margin-top: 10px;
-      @include buttonLink(10px 20px, $bgSecondColor, none, $descriptionColor, $fontDescription, 15px);
+      & a {
+        margin-top: 30px;
+      }
     }
   }
 }
