@@ -21,11 +21,12 @@
     &::after {
       content: '';
       position: absolute;
+      background-color: rgba(255, 255, 255, .2);
       bottom: 0;
       height: 2px;
-      background-color: rgba(255, 255, 255, .2);
       width: 150px;
-      left: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   .description {
