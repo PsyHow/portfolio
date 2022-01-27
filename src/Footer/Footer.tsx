@@ -26,10 +26,13 @@ export const Footer = () => {
             <div className={ `${ styleContainer.container } ${ style.container }` }>
                 <span className={ style.title }>Burnishev Viktor</span>
                 <div className={ style.socialContainer }>
-                    <a href={ '' } className={ style.social } style={ gmail }></a>
-                    <a href={ '' } className={ style.social } style={ telegram }></a>
-                    <a href={ '' } className={ style.social } style={ linkedIn }></a>
-                    <a href={ '' } className={ style.social } style={ github }></a>
+                    <a href={ 'mailto:viktorburnyshev@gmail.com' } className={ style.social } style={ gmail }/>
+                    <a href={ 'https://t.me/PsyhowSddd' } className={ style.social }
+                       style={ telegram }/>
+                    <a href={ 'https://www.linkedin.com/in/viktor-burnyshev-a39754226/' }
+                       className={ style.social } style={ linkedIn }/>
+                    <a href={ 'https://github.com/PsyHow' } className={ style.social }
+                       style={ github }/>
                 </div>
                 <p className={ style.about }>Copyright © 2021. All rights reserved.</p>
             </div>
