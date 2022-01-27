@@ -6,6 +6,7 @@
   padding: 100px 0;
   position: relative;
   z-index: 2;
+  min-height: 100vh;
 
   .particles {
     position: absolute;
@@ -48,10 +49,10 @@
       .border1 {
         position: absolute;
         z-index: 1;
-        left: -40px;
-        bottom: -20px;
-        right: -40px;
-        top: -20px;
+        left: -20px;
+        bottom: -10px;
+        right: -20px;
+        top: -10px;
         border: 1px solid $primaryColor;
         border-radius: 2px;
       }
@@ -59,10 +60,10 @@
       .border2 {
         position: absolute;
         z-index: 1;
-        left: -20px;
-        bottom: -40px;
-        right: -20px;
-        top: -40px;
+        left: -10px;
+        bottom: -20px;
+        right: -10px;
+        top: -20px;
         border: 1px solid $primaryColor;
         border-radius: 2px;
       }

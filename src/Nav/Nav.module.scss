@@ -10,5 +10,9 @@
     text-decoration: none;
     @include text($fontDescription, 20px, 1.44, 400);
     color: $primaryColor;
+
+    &:hover {
+      color: #DDDDDD
+    }
   }
 }

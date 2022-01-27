@@ -13,34 +13,6 @@ export const Main = () => {
         <div id={ 'home' } className={ style.mainBlock }>
             <Particles className={style.particles} options={{
                 fpsLimit: 30,
-                interactivity: {
-                    events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
-                    modes: {
-                        bubble: {
-                            distance: 400,
-                            duration: 2,
-                            opacity: 0.8,
-                            size: 40,
-                        },
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4,
-                        },
-                    },
-                },
                 particles: {
                     color: {
                         value: "#F0E68C",

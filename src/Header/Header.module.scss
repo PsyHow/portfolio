@@ -2,10 +2,15 @@
 
 .header {
   height: 80px;
+  width: 100%;
   background-color: $bgSecondColor;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  z-index: 3;
+  position: fixed;
+  z-index: 4;
+
+  @media screen and (max-width: 874px){
+    justify-content: center;
+  }
 }

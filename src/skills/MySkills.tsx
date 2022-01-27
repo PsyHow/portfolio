@@ -3,15 +3,31 @@ import style from './MySkills.module.scss'
 import containerStyle from "../common/styles/Container.module.css";
 import { Skill } from "./skill/Skill";
 import { Title } from "../common/components/Title/Title";
-import jsImage from "../assets/image/js.png";
+import jsImage from "../assets/javascript.png";
 import htmlImage from "../assets/image/html.png";
-import reactImage from "../assets/image/React.jpg";
+import tsImage from "../assets/typescript.png";
+import api from "../assets/api.png";
+import reactImage from "../assets/physics.png";
+import reduxImage from "../assets/redux1.svg";
+import firebaseImg from "../assets/mascot_firebase-logo.png";
 import Fade from 'react-awesome-reveal';
 
 export const MySkills = () => {
 
     const javaScript = {
         backgroundImage: `url(${ jsImage })`,
+    }
+    const typescript = {
+        backgroundImage: `url(${ tsImage })`,
+    }
+    const firebase = {
+        backgroundImage: `url(${ firebaseImg })`,
+    }
+    const restApi = {
+        backgroundImage: `url(${ api })`,
+    }
+    const redux = {
+        backgroundImage: `url(${ reduxImage })`,
     }
     const html = {
         backgroundImage: `url(${ htmlImage })`,
@@ -27,14 +43,16 @@ export const MySkills = () => {
                     className={ `${ containerStyle.container } ${ style.skillsContainer }` }>
                     <Title text={ 'Skills' }/>
                     <Fade>
-                    <div className={ style.skills }>
-                        <Skill style={ javaScript } title={ 'JavaScript' }
-                               description={ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }/>
-                        <Skill style={ html } title={ 'Html & Css' }
-                               description={ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }/>
-                        <Skill style={ react } title={ 'React' }
-                               description={ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }/>
-                    </div>
+                        <div className={ style.skills }>
+                            <Skill style={ javaScript } title={ 'JavaScript' }/>
+                            <Skill style={ react } title={ 'React' }/>
+                            <Skill style={ redux } title={ 'Redux' }/>
+                            <Skill style={ typescript } title={ 'Typescript' }/>
+                            <Skill style={ restApi } title={ 'RestApi' }/>
+                            <Skill style={ firebase } title={ 'Firebase' }/>
+                            <Skill style={ redux } title={ 'Redux Toolkit' }/>
+                            <Skill style={ html } title={ 'Html & Css' }/>
+                        </div>
                     </Fade>
                 </div>
             </Fade>
