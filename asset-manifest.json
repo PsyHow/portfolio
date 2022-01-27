@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a3b39c87.chunk.css",
-    "main.js": "/portfolio/static/js/main.6e274982.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6e274982.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.046bf72a.chunk.css",
+    "main.js": "/portfolio/static/js/main.3396acd8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3396acd8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f9bdf72e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f9bdf72e.js.map",
     "static/js/2.002223b8.chunk.js": "/portfolio/static/js/2.002223b8.chunk.js",
@@ -10,22 +10,24 @@
     "static/js/3.6cd36a17.chunk.js": "/portfolio/static/js/3.6cd36a17.chunk.js",
     "static/js/3.6cd36a17.chunk.js.map": "/portfolio/static/js/3.6cd36a17.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.a3b39c87.chunk.css.map": "/portfolio/static/css/main.a3b39c87.chunk.css.map",
+    "static/css/main.046bf72a.chunk.css.map": "/portfolio/static/css/main.046bf72a.chunk.css.map",
     "static/js/2.002223b8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.002223b8.chunk.js.LICENSE.txt",
     "static/media/0_zyCI97lw5e_a7-sP.9ffad6d2.jpg": "/portfolio/static/media/0_zyCI97lw5e_a7-sP.9ffad6d2.jpg",
     "static/media/321.b86c1b90.jpg": "/portfolio/static/media/321.b86c1b90.jpg",
     "static/media/360_F_72928371_WqqMwhEb3XPmeGlqH3ynIaoFss8uyV3K.ea3b135d.jpg": "/portfolio/static/media/360_F_72928371_WqqMwhEb3XPmeGlqH3ynIaoFss8uyV3K.ea3b135d.jpg",
-    "static/media/React.543510f5.jpg": "/portfolio/static/media/React.543510f5.jpg",
     "static/media/github.f3d873d7.png": "/portfolio/static/media/github.f3d873d7.png",
     "static/media/istockphoto-863607936-612x612.a1fd4b64.jpg": "/portfolio/static/media/istockphoto-863607936-612x612.a1fd4b64.jpg",
-    "static/media/js.67b08731.png": "/portfolio/static/media/js.67b08731.png",
+    "static/media/javascript.749d66c7.png": "/portfolio/static/media/javascript.749d66c7.png",
+    "static/media/kak-zarabotat-na-internet-magazine.667190b8.jpg": "/portfolio/static/media/kak-zarabotat-na-internet-magazine.667190b8.jpg",
     "static/media/linkedin.f249b382.png": "/portfolio/static/media/linkedin.f249b382.png",
+    "static/media/mascot_firebase-logo.edcdc489.png": "/portfolio/static/media/mascot_firebase-logo.edcdc489.png",
+    "static/media/redux1.71eb13e2.svg": "/portfolio/static/media/redux1.71eb13e2.svg",
     "static/media/telegram.9f245f32.png": "/portfolio/static/media/telegram.9f245f32.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f9bdf72e.js",
     "static/js/2.002223b8.chunk.js",
-    "static/css/main.a3b39c87.chunk.css",
-    "static/js/main.6e274982.chunk.js"
+    "static/css/main.046bf72a.chunk.css",
+    "static/js/main.3396acd8.chunk.js"
   ]
 }
